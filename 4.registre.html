@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre - Mercat de Sant Antoni 2025</title>
+    <link rel="stylesheet" href="CSS/estilos.CSS">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="capt_web/LOGO.png" alt="Logo del Mercat">
+            </div>
+            <button class="hamburger">☰</button>
+           <ul class="nav-menu">
+                <li><a href="1.index.html">Inici</a></li>
+                <li><a href="1.index.html#dates">Dates</a></li>
+                <li><a href="1.index.html#patrocinadors">Patrocinadors</a></li>
+                <li><a href="2.FAQ.html">FAQ</a></li>
+                <li><a href="3.contacte.html">Contacte</a></li>
+                <li><a href="4.registre.html" class="boto-registre">Registre</a></li>
+                <li><a href="8.galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registre">
+            <h1>Registra't</h1>
+            <div class="registre-form">
+                <form id="registerForm">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="email">Correu electrònic</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="error-email" class="error-message"></div>
+                    
+                    <label for="password">Contrasenya</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirmar Contrasenya</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div id="error-password-match" class="error-message"></div>
+                    
+                    <button type="submit">Registra't</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="enllacos-socials">
+            <a href="#"><img src="capt_web/twitter.png" alt="X"></a>
+            <a href="#"><img src="capt_web/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="capt_web/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="capt_web/music-2.png" alt="TikTok"></a>
+            <a href="#"><img src="capt_web/youtube.png" alt="YouTube"></a>
+        </div>
+        <div class="enllacos-legals">
+            <a href="5.condicions.html">Termes i Condicions</a> |
+            <a href="6.cookies.html">Política de Cookies</a> |
+            <a href="7.privadesa.html">Política de Privadesa</a>
+        </div>
+        <p>Fet amb <span class="cor">❤️</span> per Anna Violeta & Raluca</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

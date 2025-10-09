@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta'ns - Mercat de Sant Antoni</title>
+    <link rel="stylesheet" href="CSS/estilos.CSS">
+</head>
+<body>
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <h2>Benvinguts al Mercat de Sant Antoni!</h2>
+            <p>Uneix-te a nosaltres el 13 d'abril de 2025 per gaudir d'un dia ple d'activitats, estands i networking. Registra't ara per no perdre't res!</p>
+            <a href="4.registre.html" class="modal-cta">Registra't Ara</a>
+            <button class="modal-close">Tancar</button>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="capt_web/LOGO.png" alt="Mercat de Sant Antoni Logo">
+            </div>
+            <button class="hamburger">☰</button>
+           <ul class="nav-menu">
+                <li><a href="1.index.html">Inici</a></li>
+                <li><a href="1.index.html#dates">Dates</a></li>
+                <li><a href="1.index.html#patrocinadors">Patrocinadors</a></li>
+                <li><a href="2.FAQ.html">FAQ</a></li>
+                <li><a href="3.contacte.html">Contacte</a></li>
+                <li><a href="4.registre.html" class="boto-registre">Registre</a></li>
+                <li><a href="8.galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacte">
+        <h1>Contacta'ns</h1>
+        <div class="contacte-content">
+            <div class="contacte-info">
+                <h2>Uneix-te a l'experiència!</h2>
+                <p>Viu el Mercat de Sant Antoni, un esdeveniment únic ple de col·leccionisme, articles vintage i networking.</p>
+                <p><strong>Adreça:</strong> Camí de Sant Antoni, 8, 43893 Altafulla, Tarragona</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.514054068085!2d1.3748973155186067!3d41.14356797928715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3f7f5c6b7b5b3%3A0x3c8b7c5e6a2f3b4!2sCam%C3%AD%20de%20Sant%20Antoni%2C%208%2C%2043893%20Altafulla%2C%20Tarragona%2C%20Spain!5e0!3m2!1sen!2sus!4v1697051234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="contacte-form">
+                <form id="contactForm">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+
+                    <label for="email">Correu electrònic</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+
+                    <label for="subject">Assumpte</label>
+                    <input type="text" id="subject" name="subject">
+                    <span class="error-message" id="subjectError"></span>
+
+                    <label for="message">Missatge</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+
+                    <button type="submit">Envia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="enllacos-socials">
+            <a href="https://youtube.com"><img src="capt_web/youtube.png" alt="YouTube"></a>
+            <a href="https://twitter.com"><img src="capt_web/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="capt_web/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="enllacos-legals">
+            <a href="5.condicions.html">Termes i Condicions</a> |
+            <a href="6.cookies.html">Política de Cookies</a> |
+            <a href="7.privadesa.html">Política de Privadesa</a>
+        </div>
+        <p>Fet amb <span class="cor">❤️</span> per Anna Violeta & Raluca</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
