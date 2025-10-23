@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAVIAR Outfits</title>
+    <link rel="stylesheet" href="CSS/estilos.CSS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul class="nav-menu">
+             <li class="nav-logo"><a href="#hero"><img src="capt_web/caviarlogo.png" alt="Inicio" style="max-height: 50px;"></a></li>
+             <li class="nav-right"><a href="#idioma">ESP</a></li>
+             <li class="nav-right"><a href="#carrito"><i class="bi bi-bag"></i></a></li>
+             <li class="nav-right"><a href="#busqueda"><i class="bi bi-search"></i></a></li>
+             <li class="nav-right"><a href="#locker"><i class="bi bi-person"></i></a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <button class="sidebar-close">&times;</button>
+            <h2>Categorías</h2>
+            <ul class="sidebar-menu">
+                <li><a href="#novedades">NEW ARRIVALS</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#ropa">Ropa</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
+                <li><a href="#zapatos">Zapatos</a></li>
+                <li><a href="#Createyouroutfit">Create your Outfit</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="capt_web/CaviarBanner.png" alt="CAVIAR Outfits Logo">
+            <div class="hero-text">
+                <h1>CAVIAR Outfits</h1>
+                <p>It's not about brand, it's about style</p>
+                <a href="#registro" class="cta">Regístrate</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="capt_web/diosbey.jpg" class="d-block w-100 carousel-img" alt="Imagen 1 de CAVIAR Outfits">
+            </div>
+            <div class="carousel-item">
+                <img src="capt_web/carhart.jpg" class="d-block w-100 carousel-img" alt="Imagen 2 de CAVIAR Outfits">
+            </div>
+            <div class="carousel-item">
+                <img src="capt_web/DICKIES.jpg" class="d-block w-100 carousel-img" alt="Imagen 3 de CAVIAR Outfits">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <section id="categorias-buscador" class="categorias-buscador">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <div class="container">
+            <div class="buscador-categorias-row">
+                <form class="buscador-form-compact">
+                    <span class="lupa">🔍</span>
+                    <input type="text" id="busqueda" name="busqueda" placeholder="" required>
+                </form>
+                <div class="categorias-inline">
+                    <a href="#novedades">Novedades</a>
+                    <a href="#ofertas">Ofertas</a>
+                    <a href="#ropa">Ropa</a>
+                    <a href="#colecciones">Colecciones</a>
+                    <a href="#accesorios">Accesorios</a>
+                    <a href="#lookbook">Lookbook</a>
+                    <a href="#caviarspolaroid">Caviar's POLAROID</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos-grid">
+        <div class="grid-container">
+            <img src="capt_web/dua.jpg" alt="Foto 1">
+            <img src="capt_web/kappa.jpg" alt="Foto 2">
+            <img src="capt_web/pogo.jpg" alt="Foto 3">
+            <img src="capt_web/obey.jpg" alt="Foto 4">
+            <img src="capt_web/cybernene.jpg" alt="Foto 5">
+        </div>
+    </section>
+
+    <hr class="linea-gris">
+
+    <section id="caviarspolaroid">
+        <h2 class="polaroid-titulo">CAVIAR'S POLAROID</h2>
+        <div class="polaroid-slider-container">
+            <button class="slider-btn prev" onclick="scrollSlider('polaroid-slider', -200)">&#10094;</button>
+            <div class="polaroid-slider" id="polaroid-slider">
+                <img src="capt_web/polaroid1.png" alt="Foto 6">
+                <img src="capt_web/polaroid9.png" alt="Foto 7">
+                <img src="capt_web/polaroid4.png" alt="Foto 8">
+                <img src="capt_web/polaroid5.png" alt="Foto 9">
+                <img src="capt_web/polaroid7.png" alt="Foto 10">
+                <img src="capt_web/polaroid1.png" alt="Foto 11">
+                <img src="capt_web/polaroid9.png" alt="Foto 12">
+                <img src="capt_web/polaroid4.png" alt="Foto 13">
+            </div>
+            <button class="slider-btn next" onclick="scrollSlider('polaroid-slider', 200)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Deja el ghosting, ¡mándanos un mensaje!</p>
+        <div class="contacto-content">
+            <div class="contacto-form">
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <p>También puedes contactarnos por redes sociales.</p>
+        <div class="enlaces-sociales">
+            <a href="https://youtu.be/aCx7NarPp0w?si=vocFTQ4-19-kO96r"><img src="capt_web/youtube.png" alt="Youtube"></a>
+            <a href="https://www.tiktok.com/@caviar.outfits?is_from_webapp=1&sender_device=pc"><img src="capt_web/twitter.png" alt="Tik Tok"></a>
+            <a href="https://www.instagram.com/caviaroutfits/"><img src="capt_web/instagram.png" alt="Instagram"></a>
+        </div>
+    </section>
+
+    <section id="registro">
+        <h2>Registro</h2>
+        <p>¡Tu drip merece este drop! ¡Regístrate gratis!</p>
+        <div class="registro-form">
+            <form>
+                <label for="nombre-registro">Nombre:</label>
+                <input type="text" id="nombre-registro" name="nombre-registro" required>
+                <label for="correo-registro">Correo electrónico:</label>
+                <input type="email" id="correo-registro" name="correo-registro" required>
+                <button type="submit">Regístrate</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
+        <p>Made with style by Anna Violeta & Raluca</p>
+        <div class="enlaces-legales">
+            <a href="condiciones.html">Términos y Condiciones</a> |
+            <a href="cookies.html">Política de Cookies</a> |
+            <a href="privacidad.html">Política de Privacidad</a>
+        </div>
+    </footer>
+
+    <div class="modal" id="welcome-modal">
+        <div class="modal-content">
+            <h2>Bienvenidos a CAVIAR Outfits</h2>
+            <p>¡Únete a la experiencia de moda vintage y coleccionismo más exclusiva!</p>
+            <a href="#registro" class="modal-cta">Regístrate ahora</a>
+            <button class="modal-close">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function scrollSlider(sliderId, distance) {
+            const slider = document.getElementById(sliderId);
+            slider.scrollBy({ left: distance, behavior: 'smooth' });
+        }
+
+        // Toggle menú lateral
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        sidebarClose.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
